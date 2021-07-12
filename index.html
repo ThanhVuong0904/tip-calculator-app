@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="wrap">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="">
+      </div>
+      <div class="tip-cal">
+        <div class="left">
+          <div class="header">
+            <div class="title">
+              <h3>Bill</h3>
+            </div>
+            <div class="group dollar">
+              <!-- <img src="./images/icon-dollar.svg" alt=""> -->
+              <input type="number" placeholder="0" value="" max="999999" min="0">
+            </div>
+          </div>
+  
+          <div class="select__tip">
+            <div class="select__tip-title">
+              <h3>Select Tip %</h3>
+            </div>
+            <div class="select__tip-box">
+              <button class="box box-per">5%</button>
+              <button class="box box-per">10%</button>
+              <button class="box box-per">15%</button>
+              <button class="box box-per">25%</button>
+              <button class="box box-per">50%</button>
+              <input class="box custom-per" placeholder="Custom">
+            </div>
+          </div>
+  
+          <div class="number-of-people">
+            <!-- sorry i'm lazy -->
+            <div style="display: flex; justify-content: space-between; align-items: center;" class="title">
+              <h3>Number of People</h3><span class="mess">Can't be zero</span>
+            </div>
+            <div class="group person">
+              <!-- <img src="./images/icon-dollar.svg" alt=""> -->
+              <input type="number" placeholder="0" value="" max="9999" min="0">
+            </div>
+  
+          </div>
+        </div>
+  
+        <div class="right">
+            <div class="background">
+              <div class="right-top">
+                <div class="tip-amount general">
+                  <div class="tip-amount-title">
+                    <h3>Tip Amount</h3>
+                    <h4>/ person</h4>
+                  </div>
+                  <div class="tip-amount-number">
+                    <span>$</span><span class="price-tip-amount">0.00</span>
+                  </div>
+                </div>
+    
+                <div class="total general">
+                  <div class="total-title">
+                    <h3>Total</h3>
+                    <h4>/ person</h4>
+                  </div>
+                  <div class="tip-amount-number">
+                    <span>$</span><span class="price-total">0.00</span>
+                  </div>
+                </div>
+              </div>
+  
+              <button class="reset">RESET</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./script.js"></script>
+</html>
